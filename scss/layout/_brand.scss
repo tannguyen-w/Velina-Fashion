@@ -1,0 +1,76 @@
+@use "../abstracts";
+
+.brand {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  @include abstracts.screen(md) {
+    margin-top: 54px;
+    margin-bottom: 27px;
+  }
+
+  &__sub-title {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+    @include abstracts.screen(md) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  &__title {
+    margin-top: 8px;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 500;
+
+    text-transform: capitalize;
+
+    @include abstracts.screen(md) {
+      font-size: 25.6px;
+      line-height: 33.6px;
+    }
+  }
+
+  &__desc {
+    margin-top: 8px;
+
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 26px;
+    font-size: 16px;
+
+    @include abstracts.screen(md) {
+      line-height: 24px;
+      font-size: 14px;
+    }
+  }
+
+  &__list {
+    margin-top: 43px;
+
+    @include abstracts.screen(md) {
+      margin-top: 27px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

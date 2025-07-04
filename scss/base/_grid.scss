@@ -19,14 +19,14 @@ $container-max-widths: (
   xxxl: 1410px,
 );
 $grid-columns: 12 !default;
-$grid-gutter-width: 30px !default;
+$grid-gutter-width: 40px !default;
 $gutters: (
   0: 0,
   1: 0.25,
   2: 0.5,
-  3: 1,
-  4: 1.5,
-  5: 3,
+  3: 0.75,
+  4: 1,
+  5: 1.25,
 );
 
 %gutter-padding {
