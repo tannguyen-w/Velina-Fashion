@@ -2094,13 +2094,20 @@ h4 {
   padding: 12px 0;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
+}
+.carousel__wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .carousel__content {
-  padding-left: 20px;
   display: inline-flex;
   align-items: center;
-  animation: scroll-left 24.17s linear infinite;
-  animation-fill-mode: forwards;
+  white-space: nowrap;
+  animation: none;
+  transition: transform 0.1s linear;
+  will-change: transform;
 }
 .carousel__item {
   padding: 0 40px;
@@ -2109,15 +2116,6 @@ h4 {
   font-weight: 500;
   white-space: nowrap;
   flex-shrink: 0;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-150%);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

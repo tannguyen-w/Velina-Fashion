@@ -3,13 +3,21 @@
   padding: 12px 0;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 
   &__content {
-    padding-left: 20px;
     display: inline-flex;
     align-items: center;
-    animation: scroll-left 24.17s linear infinite;
-    animation-fill-mode: forwards;
+    white-space: nowrap;
+    animation: none;
+    transition: transform 0.1s linear;
+    will-change: transform;
   }
 
   &__item {
@@ -19,14 +27,5 @@
     font-weight: 500;
     white-space: nowrap;
     flex-shrink: 0;
-  }
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-150%);
   }
 }
