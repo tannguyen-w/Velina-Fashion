@@ -8,8 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "swiper": "^11.2.10"
-  }
+  "description": ""
 }

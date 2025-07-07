@@ -2101,6 +2101,11 @@ h4 {
   height: 430px;
   object-fit: cover;
 }
+@media (max-width: 767.98px) {
+  .product-item__img {
+    height: 250px;
+  }
+}
 
 .product-item__badge {
   position: absolute;
@@ -2191,6 +2196,57 @@ h4 {
   line-height: 24px;
   text-decoration: line-through;
   color: #8a8a8a;
+}
+
+/* Animation cho success state */
+@keyframes quickAddSuccess {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(135deg, #333, #555);
+  }
+  50% {
+    transform: scale(1.05);
+    background: #28a745;
+  }
+  100% {
+    transform: scale(1);
+    background: #cccccc;
+  }
+}
+.product-item__quick-add {
+  background: #ccc;
+  color: #fff;
+}
+
+/* Loading state */
+.product-item__quick-add--loading {
+  z-index: 10;
+  pointer-events: none;
+  cursor: none;
+}
+
+.product-item__quick-add--loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  color: #fff !important; /* Color of the spinner */
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
