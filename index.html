@@ -24,17 +24,6 @@
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Splide -->
-    <script src="
-        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-        "></script>
-    <link
-      href="
-        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-        "
-      rel="stylesheet"
-    />
-
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
 
@@ -42,6 +31,7 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/colections.js"></script>
+    <script src="./assets/js/products.js"></script>
   </head>
   <body>
     <div id="banner">
@@ -68,10 +58,18 @@
       </script>
     </div>
 
+    <div id="products">
+      <script>
+        load("#products", "./templates/products.html");
+      </script>
+    </div>
+
     <!-- <footer id="footer">
       <script>
         load("#footer", "./templates/footer.html");
       </script>
     </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

@@ -107,6 +107,15 @@ h4 {
     }
   }
 
+  &--secondary {
+    background: #000;
+    color: #fff;
+
+    &:hover {
+      background: #646464;
+    }
+  }
+
   &__icon svg {
     display: flex;
     justify-content: center;

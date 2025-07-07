@@ -1,0 +1,46 @@
+.products {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.products-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__sub-title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #171717;
+}
+
+.products__title {
+  margin-top: 8px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.products__action {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.products__action-arr {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-list {
+  display: block;
+}
