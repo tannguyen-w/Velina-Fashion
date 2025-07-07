@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .carousel {
   background: #f5f5f5;
   padding: 12px 0;
@@ -27,5 +29,12 @@
     font-weight: 500;
     white-space: nowrap;
     flex-shrink: 0;
+
+    @include abstracts.screen(md) {
+      font-size: 17px;
+      line-height: 27px;
+      letter-spacing: 0px;
+      font-weight: 400;
+    }
   }
 }
