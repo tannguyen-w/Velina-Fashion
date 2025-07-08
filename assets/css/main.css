@@ -2842,6 +2842,7 @@ h4 {
   font-size: 19px;
   line-height: 29px;
   font-weight: 600;
+  margin-right: 20px;
 }
 @media (max-width: 767.98px) {
   .faq__ques {
@@ -2894,6 +2895,7 @@ h4 {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  margin-right: 18px;
 }
 @media (max-width: 767.98px) {
   .faq__content {

@@ -64,6 +64,7 @@
   font-size: 19px;
   line-height: 29px;
   font-weight: 600;
+  margin-right: 20px;
 
   @include abstracts.screen(md) {
     font-size: 17px;
@@ -115,6 +116,8 @@
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+
+  margin-right: 18px;
 
   @include abstracts.screen(md) {
     font-size: 14px;
