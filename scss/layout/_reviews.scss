@@ -1,0 +1,143 @@
+@use "../abstracts";
+
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: #f5f5f5;
+}
+
+.reviews__sub-title {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  @include abstracts.screen(md) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.reviews__title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+
+  @include abstracts.screen(md) {
+    font-size: 25.6px;
+    line-height: 33.6px;
+  }
+}
+
+.reviews__list {
+  margin-top: 50px;
+
+  @include abstracts.screen(md) {
+    margin-top: 0;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include abstracts.screen(md) {
+    margin-top: 30px;
+  }
+}
+
+.reviews__rate .star {
+  color: #b91c1c;
+  width: 20px;
+  height: 20px;
+}
+
+.reviews__info,
+.reviews__content {
+  margin-top: 16px;
+}
+
+.reviews__content {
+  text-align: center;
+
+  font-size: 19px;
+  line-height: 29px;
+
+  @include abstracts.screen(md) {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+.reviews__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.reviews__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @include abstracts.screen(md) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.reviews__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__info--address .reviews__info--name {
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 500;
+
+  @include abstracts.screen(md) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.reviews__info--address {
+  color: #8a8a8a;
+  margin-top: 8px;
+}
+
+.reviews__pagination {
+  margin-top: 50px;
+
+  @include abstracts.screen(md) {
+    margin-top: 27px;
+  }
+}
+
+.reviews__pagination .swiper-pagination-bullet {
+  width: 40px;
+  height: 2px;
+  padding: 1px 0;
+  border-radius: 0;
+  background: #505050;
+
+  &:hover {
+    background: #505050;
+  }
+}
+
+.reviews__wrapper {
+  padding-bottom: 50px;
+}
