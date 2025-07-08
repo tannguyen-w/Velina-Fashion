@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".product-item__quick-add").forEach(function (button) {
     button.addEventListener("click", function () {
       button.classList.remove("btn--secondary");
+      button.classList.add("product-item__quick-add--active");
       const loadingSpinner = this.querySelector(".product-item__quick-add--loading");
       if (loadingSpinner) {
         loadingSpinner.classList.remove("d-none");
