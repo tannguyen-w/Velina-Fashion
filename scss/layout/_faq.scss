@@ -1,0 +1,123 @@
+@use "../abstracts";
+
+.faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #171717;
+
+  @include abstracts.screen(md) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
+
+.faq__sub-title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include abstracts.screen(md) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.faq__title {
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+  text-align: center;
+
+  @include abstracts.screen(md) {
+    font-size: 25.6px;
+    line-height: 33.6px;
+  }
+}
+
+.faq__item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.faq__item.active .faq__top {
+  cursor: default;
+}
+
+.faq__item.active {
+  border-color: #171717;
+}
+
+.faq__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq__ques {
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 600;
+
+  @include abstracts.screen(md) {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+.faq__action {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+
+/* Cả hai thanh đều cần transition */
+.faq__action::before,
+.faq__action::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  transition: transform 0.3s ease; /* Di chuyển transition vào đây */
+}
+
+/* Thanh ngang */
+.faq__action::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 2px;
+}
+
+/* Thanh dọc - mặc định là dấu cộng */
+.faq__action::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 12px;
+}
+
+/* Thanh dọc xoay 90 độ khi active - tạo dấu trừ */
+.faq__item.active .faq__action::after {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.faq__content {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+
+  @include abstracts.screen(md) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
