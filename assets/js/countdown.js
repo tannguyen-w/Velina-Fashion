@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Video player script loaded");
 
-  // Đợi một chút để đảm bảo DOM hoàn toàn được tải
   setTimeout(function () {
     initVideoPlayer();
   }, 200);
