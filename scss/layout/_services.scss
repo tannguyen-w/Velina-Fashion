@@ -10,7 +10,7 @@
   }
 }
 
-.services__inner {
+.services__list {
   color: #171717;
 }
 
@@ -35,7 +35,6 @@
 .services__label {
   font-size: 19px;
   line-height: 29px;
-  text-transform: none;
   font-weight: 500;
 
   @include abstracts.screen(md) {
