@@ -127,6 +127,11 @@
   gap: 4px;
 }
 
+.countdown__btn--icon {
+  width: 20px;
+  height: 20px;
+}
+
 .countdown__video {
   position: relative;
   width: 500px;
@@ -147,6 +152,12 @@
   background-position: center;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.play-button--icon {
+  width: 30px;
+  height: 30px;
+  padding-left: 4px;
 }
 
 .play-button {

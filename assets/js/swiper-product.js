@@ -111,13 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
     counterEl.textContent = `${displayPage}/${totalPages}`;
   }
 
-  function showPageCounter() {
-    const counterEl = document.querySelector(".products__action-number");
-    if (counterEl) {
-      counterEl.classList.remove("d-none");
-    }
-  }
-
   // Thêm event listeners thủ công để đảm bảo hoạt động
   const prevBtn = document.querySelector(".products__action-left");
   const nextBtn = document.querySelector(".products__action-right");
