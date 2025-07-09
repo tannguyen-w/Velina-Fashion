@@ -72,6 +72,7 @@
   }
 }
 
+.product-details-info__item--action,
 .faq__action {
   position: relative;
   display: inline-block;
@@ -80,6 +81,8 @@
 }
 
 /* Cả hai thanh đều cần transition */
+.product-details-info__item--action::before,
+.product-details-info__item--action::after,
 .faq__action::before,
 .faq__action::after {
   content: "";
@@ -89,6 +92,7 @@
 }
 
 /* Thanh ngang */
+.product-details-info__item--action::before,
 .faq__action::before {
   top: 50%;
   left: 50%;
@@ -98,6 +102,7 @@
 }
 
 /* Thanh dọc - mặc định là dấu cộng */
+.product-details-info__item--action::after,
 .faq__action::after {
   top: 50%;
   left: 50%;
@@ -107,6 +112,7 @@
 }
 
 /* Thanh dọc xoay 90 độ khi active - tạo dấu trừ */
+.product-details-info__item.active .product-details-info__item--action::after,
 .faq__item.active .faq__action::after {
   transform: translate(-50%, -50%) rotate(-90deg);
 }
