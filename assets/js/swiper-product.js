@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       1024: {
         slidesPerView: 3,
         spaceBetween: 25,
-        slidesPerGroup: 1,
+        slidesPerGroup: 3,
       },
       1200: {
         slidesPerView: 4,
