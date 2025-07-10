@@ -332,6 +332,31 @@ h4 {
   font-family: "Fahkwang", sans-serif;
 }
 
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+}
+@media (max-width: 767.98px) {
+  h3 {
+    font-size: 25.6px;
+    line-height: 33.6px;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #171717;
+}
+@media (max-width: 767.98px) {
+  p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
 .btn {
   font-family: "Fahkwang", sans-serif;
   display: inline-flex;
@@ -1696,13 +1721,8 @@ h4 {
   letter-spacing: 2px;
 }
 .banner__title {
-  font-size: 3.2rem;
   font-weight: 500;
-  line-height: 1.2;
   text-transform: capitalize;
-}
-.banner__desc {
-  line-height: 26px;
 }
 .banner__btn {
   margin-top: 26px;
@@ -2004,28 +2024,16 @@ h4 {
   font-size: 28px;
   line-height: 38px;
   font-weight: 500;
-  letter-spacing: 0px;
 }
 @media (max-width: 767.98px) {
   .collections-explore__title {
     font-size: 22.4px;
     line-height: 30px;
-    font-weight: 500;
   }
 }
 
 .collections-explore__desc {
   margin-top: 10px;
-  line-height: 26px;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0px;
-}
-@media (max-width: 767.98px) {
-  .collections-explore__desc {
-    line-height: 24px;
-    font-size: 14px;
-  }
 }
 
 .collections-explore__btn {
@@ -2059,9 +2067,6 @@ h4 {
 
 .products__title {
   margin-top: 8px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
   letter-spacing: 0px;
 }
 
@@ -2149,16 +2154,11 @@ h4 {
 @media (max-width: 767.98px) {
   .countdown__title {
     margin-right: 0;
-    font-size: 25.6px;
-    line-height: 33px;
   }
 }
 
 .countdown__desc {
   margin-top: 10px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #171717;
 }
 
 .countdown__time {
@@ -2342,15 +2342,6 @@ h4 {
 
 .iwt__title {
   margin-top: 10px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-}
-@media (max-width: 767.98px) {
-  .iwt__title {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .iwt__desc {
@@ -2461,18 +2452,6 @@ h4 {
   }
 }
 
-.services__text {
-  line-height: 26px;
-  font-size: 16px;
-  font-weight: 400;
-}
-@media (max-width: 767.98px) {
-  .services__text {
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
-
 .memories {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -2512,15 +2491,6 @@ h4 {
 
 .memories__title {
   margin-top: 15px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-}
-@media (max-width: 767.98px) {
-  .memories__title {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .memories__top {
@@ -2694,15 +2664,6 @@ h4 {
 
 .reviews__title {
   text-align: center;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-}
-@media (max-width: 767.98px) {
-  .reviews__title {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .reviews__list {
@@ -2850,16 +2811,7 @@ h4 {
 
 .faq__title {
   margin-top: 10px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
   text-align: center;
-}
-@media (max-width: 767.98px) {
-  .faq__title {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .faq__item {
@@ -2943,16 +2895,7 @@ h4 {
 
 .faq__content {
   margin-top: 24px;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
   margin-right: 18px;
-}
-@media (max-width: 767.98px) {
-  .faq__content {
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 
 .footer {
@@ -2997,15 +2940,6 @@ h4 {
 
 .footer__title {
   margin-top: 15px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-}
-@media (max-width: 767.98px) {
-  .footer__title {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .footer__ctrl {
@@ -3200,15 +3134,6 @@ h4 {
 }
 .product-details__title {
   margin-top: 10px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-}
-@media (max-width: 767.98px) {
-  .product-details__title {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 .product-details__price {
   margin-top: 10px;
@@ -3383,16 +3308,7 @@ h4 {
   }
 }
 .product-details__stock--title {
-  font-size: 16px;
-  line-height: 26px;
   color: #a77a06;
-  font-weight: 500;
-}
-@media (max-width: 767.98px) {
-  .product-details__stock--title {
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 .product-details__stock--bar {
   height: 4px;

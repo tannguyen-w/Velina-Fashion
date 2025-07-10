@@ -61,16 +61,11 @@
 
   @include abstracts.screen(md) {
     margin-right: 0;
-    font-size: 25.6px;
-    line-height: 33px;
   }
 }
 
 .countdown__desc {
   margin-top: 10px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #171717;
 }
 
 .countdown__time {

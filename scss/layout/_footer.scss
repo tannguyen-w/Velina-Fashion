@@ -40,14 +40,6 @@
 
 .footer__title {
   margin-top: 15px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-
-  @include abstracts.screen(md) {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .footer__ctrl {

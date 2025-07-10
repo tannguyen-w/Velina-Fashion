@@ -24,14 +24,6 @@
 
 .reviews__title {
   text-align: center;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 500;
-
-  @include abstracts.screen(md) {
-    font-size: 25.6px;
-    line-height: 33.6px;
-  }
 }
 
 .reviews__list {

@@ -87,6 +87,29 @@ h4 {
   font-family: "Fahkwang", sans-serif;
 }
 
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+
+  @include abstracts.screen(md) {
+    font-size: 25.6px;
+    line-height: 33.6px;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #171717;
+
+  @include abstracts.screen(md) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
 .btn {
   font-family: "Fahkwang", sans-serif;
   display: inline-flex;
