@@ -2543,6 +2543,11 @@ h4 {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767.98px) {
+  .memories__image {
+    height: 287px;
+  }
+}
 
 .memories__img {
   width: 100%;
@@ -2857,11 +2862,6 @@ h4 {
     font-size: 25.6px;
     line-height: 33.6px;
   }
-}
-
-.faq__list {
-  position: sticky;
-  bottom: 0;
 }
 
 .faq__item {

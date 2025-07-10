@@ -64,6 +64,10 @@
   height: 580px;
   position: relative; // Thêm position relative để chứa các ảnh absolute
   overflow: hidden; // Đảm bảo các ảnh không tràn ra ngoài container
+
+  @include abstracts.screen(md) {
+    height: 287px;
+  }
 }
 
 .memories__img {
