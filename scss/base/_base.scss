@@ -110,6 +110,18 @@ p {
   }
 }
 
+.title {
+  letter-spacing: 0px;
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 400;
+
+  @include abstracts.screen(md) {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
 .btn {
   font-family: "Fahkwang", sans-serif;
   display: inline-flex;
@@ -118,7 +130,6 @@ p {
   font-size: 1.6rem;
   font-weight: 500;
   border-radius: 99px;
-  transition: all 0.3s ease-in-out;
 
   &--primary {
     background: #fff;

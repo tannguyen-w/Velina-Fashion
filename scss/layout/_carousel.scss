@@ -24,17 +24,8 @@
 
   &__item {
     padding: 0 40px;
-    font-size: 19px;
-    line-height: 29px;
     font-weight: 500;
     white-space: nowrap;
     flex-shrink: 0;
-
-    @include abstracts.screen(md) {
-      font-size: 17px;
-      line-height: 27px;
-      letter-spacing: 0px;
-      font-weight: 400;
-    }
   }
 }

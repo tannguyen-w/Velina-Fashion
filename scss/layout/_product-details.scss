@@ -702,14 +702,10 @@
     }
 
     &__item--title {
-      font-size: 19px;
-      line-height: 29px;
       font-weight: 600;
 
       @include abstracts.screen(md) {
         font-weight: 500;
-        font-size: 17.6px;
-        line-height: 26px;
       }
     }
 

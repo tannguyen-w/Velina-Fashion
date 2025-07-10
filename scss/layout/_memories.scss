@@ -94,6 +94,13 @@
   z-index: 2; // Đảm bảo nó hiển thị trong quá trình transition
 }
 
+.memories__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.memories__icon,
 .memories__item,
 .memories__img {
   color: #d4d4d8;
@@ -105,7 +112,8 @@
 }
 
 .memories__item.active,
-.memories__item.active .memories__img {
+.memories__item.active .memories__img,
+.memories__item.active .memories__icon {
   color: #171717;
   border-color: #171717;
 }
@@ -169,8 +177,6 @@
   display: inline-block;
 
   font-weight: 500;
-  font-size: 19px;
-  line-height: 29px;
 
   @include abstracts.screen(md) {
     margin-top: 12px;
@@ -188,4 +194,9 @@
   @include abstracts.screen(md) {
     margin-left: 33px;
   }
+}
+
+.memories__top-left {
+  display: flex;
+  align-items: center;
 }

@@ -58,14 +58,6 @@
 
 .reviews__content {
   text-align: center;
-
-  font-size: 19px;
-  line-height: 29px;
-
-  @include abstracts.screen(md) {
-    font-size: 17px;
-    line-height: 27px;
-  }
 }
 
 .reviews__info {

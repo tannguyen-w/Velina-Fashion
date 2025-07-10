@@ -57,15 +57,8 @@
 }
 
 .faq__ques {
-  font-size: 19px;
-  line-height: 29px;
   font-weight: 600;
   margin-right: 20px;
-
-  @include abstracts.screen(md) {
-    font-size: 17px;
-    line-height: 27px;
-  }
 }
 
 .product-details-info__item--action,

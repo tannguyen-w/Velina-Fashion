@@ -33,12 +33,5 @@
 }
 
 .services__label {
-  font-size: 19px;
-  line-height: 29px;
   font-weight: 500;
-
-  @include abstracts.screen(md) {
-    font-size: 17px;
-    line-height: 27px;
-  }
 }

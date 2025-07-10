@@ -46,6 +46,7 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #fff;
   }
 
   &__title {
@@ -61,4 +62,8 @@
       margin-top: 18px;
     }
   }
+}
+
+.banner__desc {
+  color: #fff;
 }
