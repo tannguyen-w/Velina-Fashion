@@ -1907,9 +1907,6 @@ p {
   }
 }
 
-.collections-item:hover .collections-image {
-  transform: scale(1.05);
-}
 @media (max-width: 767.98px) {
   .collections-item:hover .collections-image {
     transform: none;
@@ -1944,8 +1941,12 @@ p {
 }
 
 .collections-action {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: 10px;
   opacity: 0; /* Mặc định ẩn nội dung */
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media (max-width: 767.98px) {
   .collections-action {
@@ -1957,6 +1958,8 @@ p {
 /* Hiển thị nội dung khi hover hoặc active */
 .collections-item.active .collections-action,
 .collections-item:hover .collections-action {
+  bottom: 0;
+  left: 10px;
   opacity: 1;
 }
 
@@ -1982,10 +1985,6 @@ p {
     line-height: 24px;
     font-size: 12px;
   }
-}
-
-.collections-action {
-  margin-top: 10px;
 }
 
 .collections-shop-now {
@@ -2815,8 +2814,6 @@ p {
 }
 
 .faq__item {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -2829,6 +2826,7 @@ p {
 }
 
 .faq__top {
+  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2894,8 +2892,8 @@ p {
 }
 
 .faq__content {
-  margin-top: 24px;
   margin-right: 18px;
+  margin-bottom: 24px;
 }
 
 .footer {
@@ -3791,21 +3789,6 @@ p {
   color: #8a8a8a;
 }
 
-/* Animation cho success state */
-@keyframes quickAddSuccess {
-  0% {
-    transform: scale(1);
-    background: linear-gradient(135deg, #333, #555);
-  }
-  50% {
-    transform: scale(1.05);
-    background: #28a745;
-  }
-  100% {
-    transform: scale(1);
-    background: #cccccc;
-  }
-}
 .product-item__quick-add--active {
   background: #ccc;
   color: #fff;
@@ -3830,7 +3813,7 @@ p {
   border-top: 2px solid currentColor;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  color: #fff !important; /* Color of the spinner */
+  color: #fff !important;
 }
 
 @keyframes spin {
@@ -3840,6 +3823,18 @@ p {
   100% {
     transform: translateY(-50%) rotate(360deg);
   }
+}
+.product-item__info {
+  margin-top: 15px;
+}
+@media (max-width: 767.98px) {
+  .product-item__info {
+    margin-top: 10px;
+  }
+}
+
+.collections-quantity {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

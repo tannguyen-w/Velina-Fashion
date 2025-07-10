@@ -120,22 +120,6 @@
   color: #8a8a8a;
 }
 
-/* Animation cho success state */
-@keyframes quickAddSuccess {
-  0% {
-    transform: scale(1);
-    background: linear-gradient(135deg, #333, #555);
-  }
-  50% {
-    transform: scale(1.05);
-    background: #28a745;
-  }
-  100% {
-    transform: scale(1);
-    background: #cccccc;
-  }
-}
-
 .product-item__quick-add--active {
   background: #ccc;
   color: #fff;
@@ -160,7 +144,7 @@
   border-top: 2px solid currentColor;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  color: #fff !important; /* Color of the spinner */
+  color: #fff !important;
 }
 
 @keyframes spin {
@@ -170,4 +154,16 @@
   100% {
     transform: translateY(-50%) rotate(360deg);
   }
+}
+
+.product-item__info {
+  margin-top: 15px;
+
+  @include abstracts.screen(md) {
+    margin-top: 10px;
+  }
+}
+
+.collections-quantity {
+  color: #fff;
 }
