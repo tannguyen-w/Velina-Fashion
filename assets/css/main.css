@@ -1816,9 +1816,6 @@ h4 {
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
-.brand__item img:hover {
-  transform: scale(1.05);
-}
 
 .collections-container {
   width: 100%;
