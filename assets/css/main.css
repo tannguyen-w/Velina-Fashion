@@ -2538,6 +2538,40 @@ h4 {
   padding-top: 20px;
 }
 
+.memories__image {
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+}
+
+.memories__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  pointer-events: none;
+}
+
+.memories__img.active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.memories__img.inactive {
+  visibility: hidden;
+  z-index: 1;
+}
+
+.memories__img.transitioning {
+  z-index: 2;
+}
+
 .memories__item,
 .memories__img {
   color: #d4d4d8;
@@ -2632,13 +2666,6 @@ h4 {
   .memories__item-content {
     margin-left: 33px;
   }
-}
-
-.memories__img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 .reviews {
@@ -2799,6 +2826,10 @@ h4 {
   }
 }
 
+.faq__inner {
+  height: fit-content;
+}
+
 .faq__sub-title {
   font-size: 14px;
   line-height: 24px;
@@ -2826,6 +2857,11 @@ h4 {
     font-size: 25.6px;
     line-height: 33.6px;
   }
+}
+
+.faq__list {
+  position: sticky;
+  bottom: 0;
 }
 
 .faq__item {

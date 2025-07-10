@@ -60,6 +60,44 @@
   padding-top: 20px;
 }
 
+.memories__image {
+  height: 580px;
+  position: relative; // Thêm position relative để chứa các ảnh absolute
+  overflow: hidden; // Đảm bảo các ảnh không tràn ra ngoài container
+}
+
+.memories__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute; // Chuyển thành absolute để chồng lên nhau
+  top: 0;
+  left: 0;
+  object-fit: cover; // Đảm bảo ảnh luôn phủ đầy container không bị méo
+  opacity: 0; // Mặc định tất cả các ảnh đều ẩn (opacity 0)
+  transition: opacity 0.3s ease-out; // Transition mượt mà hơn
+  pointer-events: none; // Tránh vấn đề click chuột
+
+  // Loại bỏ class hidden vì chúng ta sẽ sử dụng opacity trực tiếp
+}
+
+.memories__img.active {
+  opacity: 1;
+  z-index: 2; // Đảm bảo ảnh active luôn ở trên cùng
+  pointer-events: auto; // Cho phép tương tác với ảnh active
+}
+
+// Thay thế d-none bằng visibility để tránh reflow
+.memories__img.inactive {
+  visibility: hidden;
+  z-index: 1; // Các ảnh không active có z-index thấp hơn
+}
+
+// Ảnh đang chuyển đổi
+.memories__img.transitioning {
+  z-index: 2; // Đảm bảo nó hiển thị trong quá trình transition
+}
+
 .memories__item,
 .memories__img {
   color: #d4d4d8;
@@ -154,11 +192,4 @@
   @include abstracts.screen(md) {
     margin-left: 33px;
   }
-}
-
-.memories__img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }

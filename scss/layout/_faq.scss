@@ -11,6 +11,10 @@
   }
 }
 
+.faq__inner {
+  height: fit-content;
+}
+
 .faq__sub-title {
   font-size: 14px;
   line-height: 24px;
@@ -37,6 +41,11 @@
     font-size: 25.6px;
     line-height: 33.6px;
   }
+}
+
+.faq__list {
+  position: sticky;
+  bottom: 0;
 }
 
 .faq__item {
