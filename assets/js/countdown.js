@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Video player script loaded");
-
   setTimeout(function () {
     initVideoPlayer();
   }, 200);
@@ -9,10 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const videoOverlay = document.getElementById("videoOverlay");
     const videoPlayer = document.getElementById("videoPlayer");
     const closeButton = document.getElementById("closeButton");
-
-    console.log("Video overlay:", videoOverlay);
-    console.log("Video player:", videoPlayer);
-    console.log("Close button:", closeButton);
 
     if (!videoOverlay || !videoPlayer || !closeButton) {
       console.error("Không tìm thấy các phần tử video player");
@@ -26,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    console.log("Video element:", video);
+    videoPlayer.style.display = "none";
+    videoOverlay.style.display = "flex";
 
     // Khi bấm vào overlay để phát video
     videoOverlay.addEventListener("click", function () {
-      console.log("Play button clicked");
       videoOverlay.style.display = "none";
       videoPlayer.style.display = "block";
 
@@ -45,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Khi bấm nút đóng
     closeButton.addEventListener("click", function () {
-      console.log("Close button clicked");
       videoPlayer.style.display = "none";
       videoOverlay.style.display = "flex";
 
@@ -56,10 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Không thể tạm dừng video:", error);
       }
     });
-
-    console.log("Video player initialized");
   }
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   // Khởi tạo bộ đếm ngược từ local storage hoặc đặt mới
   initCountdown();
