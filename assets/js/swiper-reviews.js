@@ -9,8 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hiển thị pagination (chấm tròn ở dưới)
     pagination: {
-      el: ".reviews .swiper-pagination",
+      el: " .reviews__pagination",
       clickable: true,
+      type: "bullets",
     },
 
     // Thiết lập các breakpoints cho responsive

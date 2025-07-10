@@ -274,13 +274,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Thêm các class cần thiết cho Swiper
         const swiperContainer = document.querySelector(".imagesSwiper");
         if (!swiperContainer.classList.contains("swiper-initialized")) {
-          // Thêm pagination và navigation nếu chưa có
-          if (!document.querySelector(".imagesSwiper .swiper-pagination")) {
-            const pagination = document.createElement("div");
-            pagination.className = "swiper-pagination";
-            swiperContainer.appendChild(pagination);
-          }
-
           initSwiper();
         }
       }
